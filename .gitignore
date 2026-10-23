@@ -1,0 +1,22 @@
+# Local .terraform directories
+.terraform/
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude sensitive variables files
+terraform.tfvars
+terraform.tfvars.json
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Integration testing
+.kitchen.yml
+.terraform.lock.hcl # (Optional: some teams commit this to lock provider versions, but many ignore it)
