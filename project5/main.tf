@@ -83,7 +83,7 @@ resource "aws_instance" "server" {
     type        = "ssh"
     user        = "ubuntu"                  # Replace with the appropriate username for your EC2 instance
     private_key = file("~/.ssh/id_ed25519") # Replace with the path to your private key
-    host        = self.public_ip
+    host        = self.public_ip //this whole block is like ssh to the system ssh -i key ubuntu@ip 
   }
 
   # File provisioner to copy a file from local to the remote EC2 instance
