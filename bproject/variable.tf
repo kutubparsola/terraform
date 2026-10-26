@@ -14,7 +14,9 @@ variable "sub2cidr" {
 }
 variable "ami" {
   description = "ami value"
+  default = "ami-0d97d7f07b25dd693"
 }
 variable "instanceType" {
   description = "server instance type"
+  default = "t3.micro"
 }
